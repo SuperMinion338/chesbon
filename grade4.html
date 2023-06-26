@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>חשבון בכיף | כיתה ד</title>
+        <style type="text/css">
+            body{
+                background: rgb(0, 153, 255);
+            }
+            
+            </style>    
+    </head>
+    <body>
+        <h1><strong>חשבון בכיף | כיתה ד ✨✨✨ </strong></h1>
+        <p>
+            <ins><h2>ברוכ/ה הבא/ה לחלון התרגילים של כיתה ד🔥</h2></ins>
+        </p>
+
+        <script>
+   var result, result2, result3, result4, result5;
+    var goodAnswers=0 , wrongAnswers =0 ;
+    function generateRandomCalculation() {
+      var num1 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num2 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num3 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num4 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num5 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num6 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num7 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num8 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num9 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      var num10 = Math.floor(Math.random() * 150000) + 1; // Generate a random number between 1 and 10
+      if (num2 > num1) {
+        var temp = num1;
+        num1 = num2;
+        num2 = temp;
+      }
+      if (num4 > num3) {
+        var temp = num3;
+        num3 = num4;
+        num4 = temp;
+      }
+      if (num6 > num5) {
+        var temp = num5;
+        num5 = num6;
+        num6 = temp;
+      }
+      if (num8 > num7) {
+        var temp = num7;
+        num7 = num8;
+        num8 = temp;
+      }
+      if (num10 > num9) {
+        var temp = num9;
+        num9 = num10;
+        num10 = temp;
+      }
+      var operator = Math.random() < 0.5 ? '+' : '-'; // Randomly choose between addition or subtraction
+      var operator2 = Math.random() < 0.5 ? '+' : '-'; // Randomly choose between addition or subtraction
+      var operator3 = Math.random() < 0.5 ? '+' : '-'; // Randomly choose between addition or subtraction
+      var operator4 = Math.random() < 0.5 ? '+' : '-'; // Randomly choose between addition or subtraction
+      var operator5 = Math.random() < 0.5 ? '+' : '-'; // Randomly choose between addition or subtraction
+      if (operator === '+') {
+        result = num1 +  num2;
+      } else {
+        result = num1 - num2;
+      }
+
+      if (operator2 === '+') {
+        result2 = num3 + num4;
+      } else {
+        result2 = num3 - num4;
+      }
+      if (operator3 === '+') {
+        result3 = num5 +  num6;
+      } else {
+        result3 = num5 - num6;
+      }
+
+      if (operator4 === '+') {
+        result4 = num7 + num8;
+      } else {
+        result4 = num7 - num8;
+      }
+
+      if (operator5 === '+') {
+        result5 = num9 + num10;
+      } else {
+        result5 = num9 - num10;
+      }
+      var calculation = num1 + ' ' + operator + ' ' + num2 + ' =' ;
+      var calculation2 = num3 + ' ' + operator2 + ' ' + num4 + ' =' ;
+      var calculation3 = num5 + ' ' + operator3 + ' ' + num6 + ' =' ;
+      var calculation4 = num7 + ' ' + operator4 + ' ' + num8 + ' =' ;
+      var calculation5 = num9 + ' ' + operator5 + ' ' + num10 + ' =' ;
+      document.getElementById('calculation').textContent = calculation;
+      document.getElementById('calculation2').textContent = calculation2;
+      document.getElementById('calculation3').textContent = calculation3;
+      document.getElementById('calculation4').textContent = calculation4;
+      document.getElementById('calculation5').textContent = calculation5;
+    }
+    function checkResult() {
+        var inputVal = document.getElementById("myInput1").value;
+        var inputVal2 = document.getElementById("myInput2").value;
+        var inputVal3 = document.getElementById("myInput3").value;
+        var inputVal4 = document.getElementById("myInput4").value;
+        var inputVal5 = document.getElementById("myInput5").value;
+        if (result == inputVal) {
+            goodAnswers++;
+        }
+        else { 
+             wrongAnswers++;
+        }
+        if (result2 == inputVal2) {
+            goodAnswers++;
+        }
+        else { 
+             wrongAnswers++;
+        }   
+        if (result3 == inputVal3) {
+            goodAnswers++;
+        }
+        else { 
+             wrongAnswers++;
+        }
+        if (result4 == inputVal4) {
+            goodAnswers++;
+        }
+        else { 
+             wrongAnswers++;
+        }
+        if (result5 == inputVal5) {
+            goodAnswers++;
+        }
+        else { 
+             wrongAnswers++;
+        }
+        alert ('התשובות הנכונות שלך: ✅ '+ goodAnswers   +'\nהטעויות שלך: ⛔' + wrongAnswers + '\nבישביל להמשיך לחצ/י על אישור' + '🔷'  );
+
+    }
+      
+        </script>
+    <div style="position: absolute; bottom: 10px; background-color: rgb(255, 255, 255)">
+        עידו שדה 2023 ©️
+        </div>
+        <body onload="generateRandomCalculation()">
+            
+            <p id="calculation"></p> 
+            
+            <input type="text" id="myInput1" >
+            <p id="calculation2"></p> 
+            <input type="text" id="myInput2" >
+            <p id="calculation3"></p> 
+            <input type="text" id="myInput3" >
+            <p id="calculation4"></p> 
+            <input type="text" id="myInput4" >
+            <p id="calculation5"></p> 
+            <input type="text" id="myInput5" >
+            <button type="button" onclick="checkResult();">בדיקה</button>
+          </body>
+    </body>
+</html>
