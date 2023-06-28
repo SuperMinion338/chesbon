@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     margin-top: 50px;
     text-decoration: none;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
 }
 
 .welcome {
@@ -80,8 +80,8 @@ a {
 
 .excersize-item:hover {
     width: 20rem;
-    box-shadow: rgb(255, 203, 54) 0px 50px 100px -20px, rgb(255, 203, 54) 0px 30px 60px -30px, rgb(255, 203, 54) 0px -2px 6px 0px inset;
-    color: rgb(255, 203, 54);
+    box-shadow: rgb(255, 255, 255) 0px 50px 100px -20px, rgb(255, 255, 255) 0px 30px 60px -30px, rgb(255, 255, 255) 0px -2px 6px 0px inset;
+    color: rgb(255, 255, 255);
 }
 
 .ido {
