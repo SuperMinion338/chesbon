@@ -1,6 +1,6 @@
 "use strict";
 
-alert("ברוכ/ה הבא/ה לאתר ! 📌\n בישביל להמשיך לחצ/י על הכפתור הכחול 🔹")
+
 
 let result, result2, result3, result4, result5;
 let goodAnswers = 0 , wrongAnswers = 0 ;
