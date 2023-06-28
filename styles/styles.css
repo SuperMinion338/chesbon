@@ -73,7 +73,7 @@ a {
     transition: all 250ms ease-in-out;
     color: black;
     border-radius: .7rem;
-    animation: entryAnimation 0.5s ease-in-out forwards;
+    animation: entryAnimation 1.0s ease-in-out forwards;
     opacity: 0;
     transform-style: preserve-3d;
 }
